@@ -1,3 +1,4 @@
+import 'package:chat_app/screen/Profile/profile_screen.dart';
 import 'package:chat_app/screen/Widget/uihelper.dart';
 import 'package:flutter/material.dart';
 
@@ -76,7 +77,17 @@ class OtpScreen extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: UiHelper.CostomButton(callback: (){}, buttonname: 'Next'),
+      floatingActionButton: UiHelper.CostomButton(
+        callback: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => ProfileScreen(),
+            ),
+          );
+        },
+        buttonname: 'Next',
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
