@@ -45,7 +45,7 @@ class UiHelper {
       width: 40,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Color(0xffD9D9D9A1),
+        color: Color(0xffa9afb8),
       ),
       child: Padding(
         padding: const EdgeInsets.all(10.0),
