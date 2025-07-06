@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:chat_app/screen/Home/home_screen.dart';
 import 'package:chat_app/screen/Widget/uihelper.dart';
 import 'package:flutter/material.dart';
 //import 'package:flutter/services.dart';
@@ -88,7 +89,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
       ),
       floatingActionButton: UiHelper.CostomButton(
-        callback: () {},
+        callback: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+        },
         buttonname: 'Naxt',
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
